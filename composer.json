@@ -1,0 +1,43 @@
+{
+    "name": "biscolab/laravel-updown",
+    "description": "UpDown.io package for Laravel 5",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Roberto Belotti",
+            "email": "boby.belotti@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.1",
+        "laravel/framework": "^5.5",
+        "biscolab/updown-php-sdk": "^1.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "~3.0",
+        "phpunit/phpunit": "6.*|7.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Biscolab\\LaravelUpDown\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Biscolab\\LaravelUpDown\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Biscolab\\LaravelUpDown\\UpDownServiceProvider"
+            ],
+            "aliases": {
+                "ReCaptcha": "Biscolab\\LaravelUpDown\\Facades\\UpDown"
+            }
+        }
+    }
+}
