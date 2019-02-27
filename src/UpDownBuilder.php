@@ -19,7 +19,7 @@ class UpDownBuilder
     /**
      * @var UpDown
      */
-    public $updown;
+    protected $updown;
 
     /**
      * UpDownBuilder constructor.
@@ -33,6 +33,13 @@ class UpDownBuilder
             UpDownRequestFields::API_KEY => $api_key
         ]);
 
+    }
+
+    /**
+     * @return UpDown
+     */
+    public function getUpDown(): UpDown {
+        return $this->updown;
     }
 
     /**
