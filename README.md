@@ -1,6 +1,13 @@
 # Laravel UpDown
 UpDown.io package for Laravel 5
 
+[![Build Status](https://travis-ci.org/biscolab/laravel-updown.svg?branch=master)](https://travis-ci.org/biscolab/laravel-updown)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/biscolab/laravel-updown/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/biscolab/laravel-updown/?branch=master)
+[![Code Coverage](https://scrutinizer-ci.com/g/biscolab/laravel-updown/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/biscolab/laravel-updown/?branch=master)
+[![Build Status](https://scrutinizer-ci.com/g/biscolab/laravel-updown/badges/build.png?b=master)](https://scrutinizer-ci.com/g/biscolab/laravel-updown/build-status/master)
+[![Packagist](https://img.shields.io/packagist/l/biscolab/laravel-updown.svg)](https://packagist.org/packages/biscolab/laravel-updown)
+[![Packagist](https://img.shields.io/packagist/v/biscolab/laravel-updown.svg)](https://packagist.org/packages/biscolab/laravel-updown)
+
 ## Installation
 
 You can install the package via composer:
