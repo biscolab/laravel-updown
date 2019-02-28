@@ -1,5 +1,18 @@
+filter:
+    paths:
+        - 'src/*'
+        - 'tests/*'
+
+tools:
+    php_cs_fixer:
+        config: { level: psr2 }
+        
 build:
   nodes:
+    analysis:
+      tests:
+        override:
+          - php-scrutinizer-run  
     coverage:
       tests:
         override:
