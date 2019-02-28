@@ -22,4 +22,8 @@
             </exclude>
         </whitelist>
     </filter>
+    <php>
+        <env name="API_KEY" value=""/>
+        <env name="DEFAULT_TOKEN" value=""/>
+    </php>
 </phpunit>
