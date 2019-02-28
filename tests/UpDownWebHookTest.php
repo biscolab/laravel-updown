@@ -1,40 +1,31 @@
 <?php
 /**
  * Copyright (c) 2019 - present
- * laravel-updown - UpDownTestp
+ * laravel-updown - UpDownWebHookTest.php
  * author: Roberto Belotti - roby.belotti@gmail.com
  * web : robertobelotti.com, github.com/biscolab
- * Initial version created on: 15/2/2019
+ * Initial version created on: 28/2/2019
  * MIT license: https://github.com/biscolab/laravel-updown/blob/master/LICENSE
  */
 
 namespace Biscolab\LaravelUpDown\Tests;
 
-use Biscolab\LaravelUpDown\UpDownBuilder;
+use Biscolab\UpDown\Objects\WebHook;
 
 /**
- * Class UpDownTest
+ * Class UpDownWebHookTest
  * @package Biscolab\LaravelUpDown\Tests
  */
-class UpDownTest extends TestCase
+class UpDownWebHookTest extends TestCase
 {
 
     /**
      * @test
      */
-    public function testGetUpDownHelperReturnsUpDownBuilder()
+    public function testWebHookMethodReturnsWebHookObject()
     {
 
-        $this->assertInstanceOf(UpDownBuilder::class, updown());
-    }
-
-    /**
-     * @test
-     */
-    public function testGetUpDownApiKey()
-    {
-
-        $this->assertEquals(updown()->getUpDown()->getKey(), env('API_KEY', 'API_KEY'));
+        $this->assertInstanceOf(WebHook::class, updown()->WebHook());
     }
 
     /**
